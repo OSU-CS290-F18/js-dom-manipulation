@@ -20,3 +20,44 @@ while (elem) {
   console.log("elem:", elem);
   elem = elem.firstChild;
 }
+
+var photoCardContainer = document.getElementById('photo-card-container');
+console.log("photoCardContainer:", photoCardContainer);
+
+var photoCards = document.getElementsByClassName('photo-card');
+console.log("photoCards:", photoCards);
+
+for (var i = 0; i < photoCards.length; i++) {
+  console.log("photoCards[" + i + "]:", photoCards[i]);
+  // photoCards[i].remove();
+}
+
+var links = document.getElementsByTagName('a');
+console.log("links:", links);
+
+var rightNavitem = document.querySelector('.navitem.right');
+console.log("rightNavitem:", rightNavitem);
+
+var firstPersonImage = document.querySelector('img.person-photo-img');
+console.log("firstPersonImage:", firstPersonImage);
+
+var allPersonImages = document.querySelectorAll('img.person-photo-img');
+console.log("allPersonImages:", allPersonImages);
+
+console.log("rightNavitem.textContent:", rightNavitem.textContent);
+console.log("rightNavitem.innerHTML:", rightNavitem.innerHTML);
+
+console.log("firstPersonImage.src:", firstPersonImage.src);
+console.log("links[0].href:", links[0].href);
+
+var loremCard = photoCardContainer.querySelector('.lorem-card');
+console.log("loremCard.clientWidth:", loremCard.clientWidth);
+console.log("loremCard.clientHeight:", loremCard.clientHeight);
+
+console.log("loremCard.offsetWidth:", loremCard.offsetWidth);
+console.log("loremCard.offsetHeight:", loremCard.offsetHeight);
+
+console.log("loremCard.scrollWidth:", loremCard.scrollWidth);
+console.log("loremCard.scrollHeight:", loremCard.scrollHeight);
+
+console.log("loremCard.getBoundingClientRect():", loremCard.getBoundingClientRect());
